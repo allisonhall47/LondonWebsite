@@ -1,11 +1,101 @@
+"use client";
+
+import Map from "@/components/Map";
+import type { MarkerData } from "@/components/Map/Map";
+import style from "../Home.module.css";
+import { useState, useEffect, useRef } from "react";
+
+
 export default function Restaurants() {
+  const markers: MarkerData[] = [
+    { position: [51.540216245825896, -0.0898230335037724], popup: "Goodbye Horses" },
+    { position: [51.52617276400843, -0.1088187133792752], popup: "Ken's" },
+    { position: [51.526295000171736, -0.10849483664064319], popup: "Santore" },
+    { position: [51.525887598066795, -0.10899062912377988], popup: "Moro" },
+    { position: [51.524658341407765, -0.10993440750198319], popup: "Quality Wines" },
+    { position: [51.53777135038084, -0.05755048281064898], popup: "Bambi" },
+    { position: [51.46968574972911, -0.0692611834666783], popup: "Bar Levan" },
+    { position: [51.52423130504071, -0.0769776096231985], popup: "Smoking Goat" },
+    { position: [51.52450531853701, -0.07658710946529054], popup: "Dishoom Shoreditch" },
+    { position: [51.53576837583575, -0.10298399038766347], popup: "Afghan Kitchen" },
+    { position: [51.511742016881314, -0.13839368426288332], popup: "Nopi" },
+    { position: [51.52425883202755, -0.07674218129102413], popup: "BRAT Restaurant" },
+    { position: [51.52019249013376, -0.07782688872932483], popup: "Galvin Bistrot & Bar" },
+    { position: [51.513636147491106, -0.13176015450785986], popup: "Koya" },
+    { position: [51.51512419077533, -0.1333571192992584], popup: "Pizza Express" },
+    { position: [51.52371571486321, -0.07293668318657937], popup: "SMOKESTAK" },
+    { position: [51.524421213319556, -0.0774917114146259], popup: "Lina Stores Shoreditch" },
+    { position: [51.50494522384651, -0.09041120891043147], popup: "Tapas Brindisa London Bridge" },
+    { position: [51.52453523219868, -0.10259875442343286], popup: "Dragonfly Cafe" },
+    { position: [51.52435249655286, -0.10294140662510516], popup: "Bocas" },
+    { position: [51.52616837118019, -0.08229046176047602], popup: "YAYACAS" },
+    { position: [51.50484298703188, -0.019079725831616646], popup: "Wahaca Canary Wharf" },
+  ]
+
+  const descriptions: string[] = [
+    "",
+  ];
+
+  const [expandedIdx, setExpandedIdx] = useState<number | null>(null);
+  const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
+  const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    if (selectedIdx !== null) {
+      setExpandedIdx(selectedIdx);
+      itemRefs.current[selectedIdx]?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    } else {
+      setExpandedIdx(null);
+    }
+  }, [selectedIdx]);
+
   return (
-    <div className="min-h-screen bg-gray-50 py-20">
+    <div className="min-h-screen bg-gray-50 py-15">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8">London Restaurants</h1>
-        <p className="text-xl text-gray-600">
-          Coming soon: Explore London's diverse culinary scene, from street food to fine dining.
+        <div className={style.cafesTitleBox}>
+          <h1 className={style.cafesTitle}>LONDON RESTAURANTS</h1>
+        </div>
+        <p className={style.cafesDescription}>
+            To write.
         </p>
+      </div>
+      <div className={style.mapContainer}>
+        <div className={style.scrollableList}>
+          {markers.map((marker, idx) => (
+            <div
+              key={idx}
+              ref={el => { itemRefs.current[idx] = el; }}
+              className={
+                style.scrollableListItem +
+                (selectedIdx === idx ? ' ' + style.selectedListItem : '')
+              }
+              onClick={() => {
+                if (expandedIdx === idx) {
+                  setExpandedIdx(null);
+                  setSelectedIdx(null);
+                } else {
+                  setSelectedIdx(idx);
+                  setExpandedIdx(idx);
+                }
+              }}
+              tabIndex={0}
+              role="button"
+              style={{ outline: 'none' }}
+            >
+              {marker.popup}
+              {expandedIdx === idx && (
+                <div className={style.scrollableListDescription}>
+                  {descriptions[idx]}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+        <Map
+          markers={markers}
+          selectedIdx={selectedIdx}
+          setSelectedIdx={setSelectedIdx}
+        />
       </div>
     </div>
   );

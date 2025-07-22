@@ -1,0 +1,77 @@
+.mapContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 2rem;
+    padding-right: 4rem;
+    gap: 1.5rem;
+}
+
+.map {
+    width: 50%;
+    height: 40rem;
+}
+
+.scrollableList {
+    width: 50%;
+    max-height: 40rem;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-left: 4rem;
+}
+
+.scrollableListItem {
+    padding: 0.75rem 0.5rem;
+    border-bottom: 1px solid #eee;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.scrollableListItem:last-child {
+    border-bottom: none;
+}
+
+.scrollableListItem:hover {
+    background: #f5f5f5;
+}
+
+.scrollableListDescription {
+    margin-top: 0.5rem;
+    font-size: 0.98rem;
+    color: #555;
+    background: #f3f4f6;
+    border-radius: 0.25rem;
+    padding: 0.75rem 0.75rem 0.75rem 1.25rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.cafesDescription {
+    font-size: 1.25rem;
+    color: #4B5563;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cafesTitleBox {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.cafesTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 0;
+    letter-spacing: 0.05em;
+}

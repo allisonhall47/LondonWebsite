@@ -1,7 +1,7 @@
 "use client";
 
-import Map from "@/components/Map";
-import type { MarkerData } from "@/components/Map/Map";
+import Map from "../../components/Map";
+import type { MarkerData } from "../../components/Map/Map";
 import style from "../Home.module.css";
 import { useState, useEffect, useRef } from "react";
 

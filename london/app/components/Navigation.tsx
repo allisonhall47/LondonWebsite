@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import styles from './Navigation.module.css';
 
 const Navigation = () => {
   const pathname = usePathname();
@@ -14,25 +15,19 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 h-16 z-50">
-      <div className="h-full bg-white/10 backdrop-blur-sm border-b border-white/10" />
-      <div className="absolute top-0 left-0 h-full flex items-center px-8">
+    <nav className={styles.nav}>
+      <div className={styles.navBackground} />
+      <div className={styles.navContent}>
         {navItems.map((item) => (
           <Link
             key={item.path}
             href={item.path}
-            className={`relative group px-6 py-2 transition-colors ${
-              pathname === item.path
-                ? 'text-white'
-                : 'text-white/60 hover:text-white'
+            className={`${styles.navLink} ${
+              pathname === item.path ? styles.active : styles.inactive
             }`}
           >
-            <span className="block text-sm tracking-wider font-medium">
-              {item.name}
-            </span>
-            {pathname === item.path && (
-              <div className="absolute left-0 bottom-0 w-full h-0.5 bg-white" />
-            )}
+            <span className={styles.linkText}>{item.name}</span>
+            {pathname === item.path && <div className={styles.underline} />}
           </Link>
         ))}
       </div>
@@ -40,4 +35,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation; 
+export default Navigation;

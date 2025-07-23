@@ -11,16 +11,16 @@ const playfair = Playfair_Display({
 });
 
 const images = [
-  "/slideshow/DSC_0013.jpg",
-  "/slideshow/DSC_0106.jpg",
-  "/slideshow/DSC_0169.jpg",
-  "/slideshow/DSC_0039.jpg",
-  "/slideshow/DSC_0174.jpg",
-  "/slideshow/DSC_0056.jpg",
-  "/slideshow/DSC_0165.jpg",
-  "/slideshow/DSC_0015.jpg",
-  "/slideshow/DSC_0044.jpg",
-  "/slideshow/DSC_0063.jpg",
+  "/DSC_0013.jpg",
+  "/DSC_0106.jpg",
+  "/DSC_0169.jpg",
+  "/DSC_0039.jpg",
+  "/DSC_0174.jpg",
+  "/DSC_0056.jpg",
+  "/DSC_0165.jpg",
+  "/DSC_0015.jpg",
+  "/DSC_0044.jpg",
+  "/DSC_0063.jpg",
 ];
 
 export default function Home() {

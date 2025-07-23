@@ -11,16 +11,16 @@ const playfair = Playfair_Display({
 });
 
 const images = [
-  "/DSC_0013.jpg",
-  "/DSC_0106.jpg",
-  "/DSC_0169.jpg",
-  "/DSC_0039.jpg",
-  "/DSC_0174.jpg",
-  "/DSC_0056.jpg",
-  "/DSC_0165.jpg",
-  "/DSC_0015.jpg",
-  "/DSC_0044.jpg",
-  "/DSC_0063.jpg",
+  "/DSC_0013.JPG",
+  "/DSC_0106.JPG",
+  "/DSC_0169.JPG",
+  "/DSC_0039.JPG",
+  "/DSC_0174.JPG",
+  "/DSC_0056.JPG",
+  "/DSC_0165.JPG",
+  "/DSC_0015.JPG",
+  "/DSC_0044.JPG",
+  "/DSC_0063.JPG",
 ];
 
 export default function Home() {

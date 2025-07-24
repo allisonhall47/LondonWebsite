@@ -48,12 +48,14 @@ export default function Pubs() {
   // Add a description for each marker (same order)
   const descriptions: string[] = [
     "One of my local pubs and located in Exmouth Market, I think this place is top tier. Picnic benches setup outside, gorgeous interior with stain glass windows, and people spilling all out into the surrounding street each night - it's always guaranteed to be buzzing but still with a laid back vibe.",
-    "",
+    "Came here my first time going to Peckham! Very chill vibes, with many picnic tables outside the pub. Located super conviently right next to the tube station and packed with the cool (gentrified) peckham crowd.",
     "Absolute gem of an Irish pub in Peckham - lots of lager selection and rumoured great Guinness (however I have yet to try). I'm just obsessed with the vines covering the building and the large, yet still cozy, beer garden out back. Would happily sit in the leafy oasis outside any summer night.",
     "",
     "",
+    "The ultimate hidden gem in Clerkenwell. Located in the residential streets, making it so peacful and quaint. Is the absolute number 1 location if you are looking just to relax with a pint and a friend without being disturbed.",
+    "I would have to give this the award for best rooftop in London (I mean I don't have much comparison, but I can't imagine anything beating this). It's a giant concrete space with tables covering one half and empty space to stand about on the other half. Views of the city are insane, the vibes are impeccable, the only downside is the outhouse washrooms.",
     "",
-    "",
+    "Yes this is a finance pub for post-work drinks, but I would say its slightly more lowkey and cute then the city finance bro hotspots. To find it look for a weird shaped building with a small grassy square surrounding it."
   ];
 
   const [expandedIdx, setExpandedIdx] = useState<number | null>(null);

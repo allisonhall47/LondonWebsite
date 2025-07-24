@@ -4,6 +4,14 @@ import Map from "../../components/Map";
 import type { MarkerData } from "../../components/Map/Map";
 import style from "../Home.module.css";
 import { useState, useEffect, useRef } from "react";
+import { Playfair_Display } from 'next/font/google';
+
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['700'],
+});
+
 
 
 export default function Pubs() {
@@ -65,7 +73,7 @@ export default function Pubs() {
     <div className="min-h-screen bg-gray-50 py-15">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={style.cafesTitleBox}>
-          <h1 className={style.cafesTitle}>LONDON PUBS & BARS</h1>
+          <h1 className={`${playfair.className} ${style.cafesTitle}`}>LONDON PUBS & BARS</h1>
         </div>
         <p className={style.cafesDescription}>
           A list of some pubs, bars, and night outs venues I visited in London! Despite the occasional annoyance when the pub closes its doors and kicks you to the curb at 11pm, I think London nightlife is amazing. There is a pub at every turn with delicious pints, local wine bars, and great places for a lil boogie!

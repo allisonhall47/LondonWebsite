@@ -4,6 +4,13 @@ import Map from "../../components/Map";
 import type { MarkerData } from "../../components/Map/Map";
 import style from "../Home.module.css";
 import { useState, useEffect, useRef } from "react";
+import { Playfair_Display } from 'next/font/google';
+
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['700'],
+});
 
 
 export default function Cafes() {
@@ -91,7 +98,7 @@ export default function Cafes() {
     <div className="min-h-screen bg-gray-50 py-15">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={style.cafesTitleBox}>
-          <h1 className={style.cafesTitle}>LONDON CAFES</h1>
+          <h1 className={`${playfair.className} ${style.cafesTitle}`}>LONDON CAFES</h1>
         </div>
         <p className={style.cafesDescription}>
           A list of majority of cafes I tried in London! After living here I consider going to a new cafe and indulging in a little coffee and sweet treat on a weekend morning a hobby. Post run or hungover from the pub, these cafes never failed to make me feel 1000x better. Please enjoy and I hope you find somewhere new to add to your list.
@@ -135,6 +142,38 @@ export default function Cafes() {
           setSelectedIdx={setSelectedIdx}
         />
       </div>
+
+      <div className={style.photoGridSection}>
+        <div className={style.photoGrid}>
+          {[
+            { src: "/freds.jpg", name: "Fred Coffee & Bakery", desc: "Pistachio Bun" },
+            { src: "/allpress.jpg", name: "Allpress Espresso Bar Shoreditch", desc: "Cinnamon bun with an iced latte, and a pain au raisin" },
+            { src: "/jolene.jpg", name: "Jolene Redchurch Street", desc: "Pastry display in the cafe window" },
+            { src: "/layla2.jpg", name: "Layla Bakery", desc: "Pastry display" },
+            { src: "/redemption.jpg", name: "Redemption Roasters", desc: "Pear and Cardamom Loaf" },
+            { src: "/sofu.jpg", name: "Sofu Coffee", desc: "Iced Matcha" },
+            { src: "/dusty.jpg", name: "The Dusty Knuckle Bakery", desc: "Cinnamon Croissant Bun" },
+            { src: "/layla.jpg", name: "Layla Bakery", desc: "Miso sticky bun & pistachio roll" },
+            { src: "/sontag.jpg", name: "Sontag", desc: "Cafe interior" },
+            { src: "/tudees.jpg", name: "Tudee's Coffee & Wine", desc: "Feta and spinach savoury pastry" },
+            { src: "/selv.jpg", name: "Selv Roastery", desc: "Banana bread and a flat white" },
+            { src: "/sourdough.jpg", name: "Sourdough Sophia", desc: "Passion fruit bow roll" },
+            { src: "/monocle.jpg", name: "The Monocle Cafe", desc: "Cardamom Bun" },
+            { src: "/roasters.jpg", name: "Redemption Roasters", desc: "Window seat in cafe" },
+            { src: "/regents.jpg", name: "Espresso Bar", desc: "Cinnamon bun and iced americano" },
+            
+          ].map((item, idx) => (
+            <div key={idx} className={style.photoCard}>
+              <img src={item.src} alt={item.name} className={style.gridImage} />
+              <div className={style.overlay}>
+                <h3>{item.name}</h3>
+                <p>{item.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
     </div>
   );
 } 

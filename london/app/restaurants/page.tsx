@@ -4,6 +4,14 @@ import Map from "../../components/Map";
 import type { MarkerData } from "../../components/Map/Map";
 import style from "../Home.module.css";
 import { useState, useEffect, useRef } from "react";
+import { Playfair_Display } from 'next/font/google';
+
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['700'],
+});
+
 
 
 export default function Restaurants() {
@@ -53,7 +61,7 @@ export default function Restaurants() {
     <div className="min-h-screen bg-gray-50 py-15">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={style.cafesTitleBox}>
-          <h1 className={style.cafesTitle}>LONDON RESTAURANTS</h1>
+          <h1 className={`${playfair.className} ${style.cafesTitle}`}>LONDON RESTAURANTS</h1>
         </div>
         <p className={style.cafesDescription}>
             To write.

@@ -95,7 +95,7 @@ export default function Cafes() {
   }, [selectedIdx]);
 
   return (
-    <div className="min-h-screen bg-gray-50 py-15">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={style.cafesTitleBox}>
           <h1 className={`${playfair.className} ${style.cafesTitle}`}>LONDON CAFES</h1>
@@ -173,7 +173,9 @@ export default function Cafes() {
           ))}
         </div>
       </div>
-
+      <footer className={style.footer}>
+        <p>&copy; {new Date().getFullYear()} Allison Hall</p>
+      </footer>
     </div>
   );
 } 

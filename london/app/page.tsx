@@ -77,6 +77,10 @@ export default function Home() {
         <a href="/restaurants" className={styles.navButton}>RESTAURANTS</a>
       </section>
 
+      <footer className={styles.footer}>
+        <p>&copy; {new Date().getFullYear()} Allison Hall</p>
+      </footer>
+
     </div>
   );
 }

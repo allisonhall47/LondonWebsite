@@ -70,7 +70,7 @@ export default function Pubs() {
   }, [selectedIdx]);
 
   return (
-    <div className="min-h-screen bg-gray-50 py-15">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={style.cafesTitleBox}>
           <h1 className={`${playfair.className} ${style.cafesTitle}`}>LONDON PUBS & BARS</h1>
@@ -117,6 +117,37 @@ export default function Pubs() {
           setSelectedIdx={setSelectedIdx}
         />
       </div>
+      <div className={style.photoGridSection}>
+        <div className={style.photoGrid}>
+          {[
+            { src: "/tenbells.jpg", name: "The Ten Bells", desc: "London Pride Pints" },
+            { src: "/franks.jpg", name: "Frank's Cafe at Bold Tendencies", desc: "Rooftop view of the city from Peckham" },
+            { src: "/gelata.jpg", name: "Galata Restaurant & Bistro", desc: "Aperol spritz and pimms next to the canal" },
+            { src: "/pubpark.jpg", name: "Pub on the Park", desc: "Maddy having her first pint next to London fields" },
+            { src: "/exmouth.jpg", name: "Exmouth Arms", desc: "Fresh Asahi pints" },
+            { src: "/grow.jpg", name: "Grow", desc: "Outside terrace on the canal" },
+            { src: "/commercial.jpg", name: "Commercial Tavern", desc: "Margaritas!" },
+            { src: "/exmouth2.jpg", name: "Exmouth Arms", desc: "Interior of the pub" },
+            { src: "/hotel.jpg", name: "Boundary Bar and Brasserie", desc: "Cocktail at the hotel bar" },
+            { src: "/mapleleaf.jpg", name: "Maple Leaf", desc: "Canadian pub on Canada day" },
+            { src: "/oldqueens.jpg", name: "The Old Queens Head", desc: "Pints and crispy chicken sandwiches" },
+            { src: "/yeold.jpg", name: "Ye Olde Mitre", desc: "Back alley courtyard outside the pub" },
+
+          ].map((item, idx) => (
+            <div key={idx} className={style.photoCard}>
+              <img src={item.src} alt={item.name} className={style.gridImage} />
+              <div className={style.overlay}>
+                <h3>{item.name}</h3>
+                <p>{item.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <footer className={style.footer}>
+        <p>&copy; {new Date().getFullYear()} Allison Hall</p>
+      </footer>
     </div>
   );
 } 

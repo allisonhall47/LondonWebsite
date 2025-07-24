@@ -83,6 +83,7 @@
     display: flex;
     justify-content: flex-start;
     margin-bottom: 0.5rem;
+    margin-top: 2rem;
 }
 
 .cafesTitle {
@@ -174,7 +175,7 @@
     flex-wrap: wrap;
     gap: 4rem;
     margin-top: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
   
   .navButton {
@@ -268,4 +269,15 @@
     font-size: 0.95rem;
     line-height: 1.4;
   }
+
+  .footer {
+    width: 100%;
+    background-color: #f3f4f6;
+    color: #4B5563;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.95rem;
+    margin-top: 4rem;
+  }
+  
   

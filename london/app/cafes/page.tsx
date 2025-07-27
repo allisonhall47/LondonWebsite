@@ -46,6 +46,8 @@ export default function Cafes() {
     { position: [51.53209351268522, -0.10641496809448887], popup: "The German Bakery" },
     { position: [51.4739449491494, -0.059402559979509405], popup: "Well & Fed" },
     { position: [51.518171215164415, -0.07816762462148201], popup: "ZeroToOne Coffee" },
+    { position: [51.49292353479565, -0.14941865598823761], popup: "Chestnut Bakery" },
+    { position: [51.48827720471122, -0.1386989777962556], popup: "Third Coffee" },
   ]
 
   const descriptions: string[] = [

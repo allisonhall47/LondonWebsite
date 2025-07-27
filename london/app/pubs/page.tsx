@@ -43,6 +43,10 @@ export default function Pubs() {
     { position: [51.53709655535489, -0.1412184001707139], popup: "The Blues Kitchen Camden" },
     { position: [51.519236255876315, 0.004086516692851808], popup: "FOLD" },
     { position: [51.51781214483523, -0.08376231588624115], popup: "Los Mochis" },
+    { position: [51.525855392504845, -0.1094776823856587], popup: "Around" },
+    { position: [51.52606136763676, -0.10916336859962775], popup: "Mikkeller Brewpub" },
+    { position: [51.52611385561709, -0.1089596093535784], popup: "Tabac" },
+    { position: [51.47967215239656, -0.15115385575671453], popup: "Pear Tree Cafe" },
   ]
 
   // Add a description for each marker (same order)
@@ -128,6 +132,9 @@ export default function Pubs() {
             { src: "/pubpark.jpg", name: "Pub on the Park", desc: "Maddy having her first pint next to London fields" },
             { src: "/exmouth.jpg", name: "Exmouth Arms", desc: "Fresh Asahi pints" },
             { src: "/grow.jpg", name: "Grow", desc: "Outside terrace on the canal" },
+            { src: "/mikkeller.jpg", name: "Mikkeller Brewpub", desc: "Exmouth market outside the pub" },
+            { src: "/around.jpg", name: "Around", desc: "Prosecco at the window seats" },
+            { src: "/peartree.jpg", name: "Pear Tree Cafe", desc: "Playing cards with pints" },
             { src: "/commercial.jpg", name: "Commercial Tavern", desc: "Margaritas!" },
             { src: "/exmouth2.jpg", name: "Exmouth Arms", desc: "Interior of the pub" },
             { src: "/hotel.jpg", name: "Boundary Bar and Brasserie", desc: "Cocktail at the hotel bar" },

@@ -21,6 +21,7 @@ export default function Restaurants() {
     { position: [51.526295000171736, -0.10849483664064319], popup: "Santore" },
     { position: [51.525887598066795, -0.10899062912377988], popup: "Moro" },
     { position: [51.524658341407765, -0.10993440750198319], popup: "Quality Wines" },
+    { position: [51.5197555588988, -0.07421958423848365], popup: "St. John Bread and Wine" },
     { position: [51.53777135038084, -0.05755048281064898], popup: "Bambi" },
     { position: [51.46968574972911, -0.0692611834666783], popup: "Bar Levan" },
     { position: [51.52423130504071, -0.0769776096231985], popup: "Smoking Goat" },
@@ -33,6 +34,7 @@ export default function Restaurants() {
     { position: [51.51512419077533, -0.1333571192992584], popup: "Pizza Express" },
     { position: [51.52371571486321, -0.07293668318657937], popup: "SMOKESTAK" },
     { position: [51.524421213319556, -0.0774917114146259], popup: "Lina Stores Shoreditch" },
+    { position: [51.498246088924404, -0.13540406787264014], popup: "Chez Antoinette Victoria" },
     { position: [51.50494522384651, -0.09041120891043147], popup: "Tapas Brindisa London Bridge" },
     { position: [51.52453523219868, -0.10259875442343286], popup: "Dragonfly Cafe" },
     { position: [51.52435249655286, -0.10294140662510516], popup: "Bocas" },
@@ -64,7 +66,7 @@ export default function Restaurants() {
           <h1 className={`${playfair.className} ${style.cafesTitle}`}>LONDON RESTAURANTS</h1>
         </div>
         <p className={style.cafesDescription}>
-            To write.
+          A list of some of the lovely restaurants I had the pleasure of dining at! Some are cozy wine bars serving delicious small plates - my personal favourite, some more upscale places, and some casual as well. Honestly I loved tried some modern British cuisine, especially a good British fusion restaurant, so keep an eye out for many of those on this list.
         </p>
       </div>
       <div className={style.mapContainer}>
@@ -104,6 +106,37 @@ export default function Restaurants() {
           selectedIdx={selectedIdx}
           setSelectedIdx={setSelectedIdx}
         />
+      </div>
+
+      <div className={style.photoGridSection}>
+        <div className={style.photoGrid}>
+          {[
+            { src: "/bambi.jpg", name: "Bambi", desc: "Margaritas at bar seats" },
+            { src: "/quality.jpg", name: "Quality Wines", desc: "Appetizers and wine" },
+            { src: "/stjohn.jpg", name: "St. John Bread and Wine", desc: "Beet salad appetizer" },
+            { src: "/nopi.jpg", name: "Nopi", desc: "Burrata, rhubarb, and foccacia" },
+            { src: "/kens.jpg", name: "Ken's", desc: "Wine and bread" },
+            { src: "/goodbye.jpg", name: "Goodbye Horses", desc: "Interior of the restaurant" },
+            { src: "/koya.jpg", name: "Koya", desc: "Cold udon noodles" },
+            { src: "/smokestak.jpg", name: "SMOKESTAK", desc: "Salmon Crudo Appetizer" },
+            { src: "/spitalfields.jpg", name: "Galvin Bistrot & Bar", desc: "Shishito peppers and croquetas" },
+            { src: "/bambi2.jpg", name: "Bambi", desc: "Vinyl DJ setup at bar" },
+            { src: "/nopi2.jpg", name: "Nopi", desc: "Pisco Sour and Kier Royale" },
+            { src: "/bocas.jpg", name: "Bocas", desc: "Selection of tapas" },
+            { src: "/borough.jpg", name: "Tapas Brindisa London Bridge", desc: "View of the Shard from the patio" },
+            { src: "/afghan.jpg", name: "Afghan Kitchen", desc: "Selection of sharing dishes" },
+            { src: "/chez.jpg", name: "Chez Antoinette Victoria", desc: "Hugo Spritz and Champagne" },
+
+          ].map((item, idx) => (
+            <div key={idx} className={style.photoCard}>
+              <img src={item.src} alt={item.name} className={style.gridImage} />
+              <div className={style.overlay}>
+                <h3>{item.name}</h3>
+                <p>{item.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       <footer className={style.footer}>

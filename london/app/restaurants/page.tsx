@@ -61,14 +61,12 @@ export default function Restaurants() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={style.cafesTitleBox}>
-          <h1 className={`${playfair.className} ${style.cafesTitle}`}>LONDON RESTAURANTS</h1>
-        </div>
-        <p className={style.cafesDescription}>
-          A list of some of the lovely restaurants I had the pleasure of dining at! Some are cozy wine bars serving delicious small plates - my personal favourite, some more upscale places, and some casual as well. Honestly I loved tried some modern British cuisine, especially a good British fusion restaurant, so keep an eye out for many of those on this list.
-        </p>
+      <div className={style.cafesTitleBox}>
+        <h1 className={`${playfair.className} ${style.cafesTitle}`}>LONDON RESTAURANTS</h1>
       </div>
+      <p className={style.cafesDescription}>
+        A list of some of the lovely restaurants I had the pleasure of dining at! Some are cozy wine bars serving delicious small plates - my personal favourite, some more upscale places, and some casual as well. Honestly I loved tried some modern British cuisine, especially a good British fusion restaurant, so keep an eye out for many of those on this list.
+      </p>
       <div className={style.mapContainer}>
         <div className={style.scrollableList}>
           {markers.map((marker, idx) => (

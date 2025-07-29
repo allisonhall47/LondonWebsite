@@ -98,14 +98,12 @@ export default function Cafes() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={style.cafesTitleBox}>
-          <h1 className={`${playfair.className} ${style.cafesTitle}`}>LONDON CAFES</h1>
-        </div>
-        <p className={style.cafesDescription}>
-          A list of majority of cafes I tried in London! After living here I consider going to a new cafe and indulging in a little coffee and sweet treat on a weekend morning a hobby. Post run or hungover from the pub, these cafes never failed to make me feel 1000x better. Please enjoy and I hope you find somewhere new to add to your list.
-        </p>
+      <div className={style.cafesTitleBox}>
+        <h1 className={`${playfair.className} ${style.cafesTitle}`}>LONDON CAFES</h1>
       </div>
+      <p className={style.cafesDescription}>
+        A list of majority of cafes I tried in London! After living here I consider going to a new cafe and indulging in a little coffee and sweet treat on a weekend morning a hobby. Post run or hungover from the pub, these cafes never failed to make me feel 1000x better. Please enjoy and I hope you find somewhere new to add to your list.
+      </p>
       <div className={style.mapContainer}>
         <div className={style.scrollableList}>
           {markers.map((marker, idx) => (

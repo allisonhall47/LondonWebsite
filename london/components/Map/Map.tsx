@@ -7,6 +7,7 @@ import L from 'leaflet';
 export type MarkerData = {
   position: [number, number];
   popup?: string;
+  type?: ("beer" | "wine" | "dance")[];
 };
 
 type MapProps = {
@@ -98,4 +99,3 @@ export default function Map({ markers, selectedIdx, setSelectedIdx }: MapProps) 
     </MapContainer>
   );
 }
-

@@ -47,6 +47,7 @@ export default function Pubs() {
     { position: [51.48623033777878, -0.16308538378071352], popup: "The Surprise", type: ["beer"] },
     { position: [51.52606136763676, -0.10916336859962775], popup: "Mikkeller Brewpub", type: ["beer"] },
     { position: [51.52611385561709, -0.1089596093535784], popup: "Tabac", type: ["wine"] },
+    { position: [51.452178645693664, -0.10068354164827743], popup: "Bird House Brewery", type: ["beer"] },
     
   ]
 

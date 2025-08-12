@@ -40,6 +40,7 @@ export default function Restaurants() {
     { position: [51.52435249655286, -0.10294140662510516], popup: "Bocas" },
     { position: [51.52616837118019, -0.08229046176047602], popup: "YAYACAS" },
     { position: [51.50484298703188, -0.019079725831616646], popup: "Wahaca Canary Wharf" },
+    { position: [51.53796962339435, -0.10292338740047487], popup: "Chubby Bowl" },
   ]
 
   const descriptions: string[] = [

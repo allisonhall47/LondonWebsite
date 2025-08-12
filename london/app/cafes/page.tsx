@@ -48,10 +48,13 @@ export default function Cafes() {
     { position: [51.518171215164415, -0.07816762462148201], popup: "ZeroToOne Coffee" },
     { position: [51.49292353479565, -0.14941865598823761], popup: "Chestnut Bakery" },
     { position: [51.48827720471122, -0.1386989777962556], popup: "Third Coffee" },
+    { position: [51.52284230878379, -0.12416674417665698], popup: "Fortitude Bakehouse" },
+    { position: [51.537864072877554, -0.0942152759624027], popup: "Pophams" },
+    { position: [51.45684827322482, -0.30309012968510474], popup: "Long Black Richmond" },
   ]
 
   const descriptions: string[] = [
-    "",
+    "A small but lovely bakery with extremely decadent pasties - I mean I can't speak for all of them but the pistachio bun I had was filled to the brim with rich filling. It was a bit too sweet for me, but it was truly a gorgeous pastry and I would love to go back to try another. They have a few cute tables to enjoy your treats outside as well!",
     "",
     "",
     "",
@@ -83,17 +86,13 @@ export default function Cafes() {
     "",
   ];
 
-  const [expandedIdx, setExpandedIdx] = useState<number | null>(null);
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     if (selectedIdx !== null) {
-      setExpandedIdx(selectedIdx);
       itemRefs.current[selectedIdx]?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    } else {
-      setExpandedIdx(null);
-    }
+    } 
   }, [selectedIdx]);
 
   return (
@@ -115,20 +114,19 @@ export default function Cafes() {
                 (selectedIdx === idx ? ' ' + style.selectedListItem : '')
               }
               onClick={() => {
-                if (expandedIdx === idx) {
-                  setExpandedIdx(null);
-                  setSelectedIdx(null);
+                if (selectedIdx === idx) {
+                  setSelectedIdx(null); 
                 } else {
                   setSelectedIdx(idx);
-                  setExpandedIdx(idx);
                 }
               }}
+              
               tabIndex={0}
               role="button"
               style={{ outline: 'none' }}
             >
               {marker.popup}
-              {expandedIdx === idx && (
+              {selectedIdx === idx && (
                 <div className={style.scrollableListDescription}>
                   {descriptions[idx]}
                 </div>

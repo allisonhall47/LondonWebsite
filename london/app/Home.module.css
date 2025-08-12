@@ -342,13 +342,13 @@
 
     .scrollableList {
         width: 100%;
-        max-height: none; /* allow full height scrolling on mobile */
+        max-height: none; 
         margin-left: 0;
       }
   
     .map {
       width: 100%;
-      height: 400px; /* adjust height for mobile if needed */
+      height: 400px; 
     }
 
   }

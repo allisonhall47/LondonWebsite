@@ -48,7 +48,31 @@ export default function Pubs() {
     { position: [51.52606136763676, -0.10916336859962775], popup: "Mikkeller Brewpub", type: ["beer"] },
     { position: [51.52611385561709, -0.1089596093535784], popup: "Tabac", type: ["wine"] },
     { position: [51.452178645693664, -0.10068354164827743], popup: "Bird House Brewery", type: ["beer"] },
-    
+    { position: [51.524503025868924, -0.1847670834396672], popup: "Formosa Dining Room", type: ["wine", "beer"] },
+    { position: [51.52204678839365, -0.18389551709185364], popup: "The Warwick Castle", type: ["beer"] },
+    { position: [51.51095660436245, -0.1271578552017169], popup: "The Salisbury Pub", type: ["beer"] },
+    { position: [51.50755679752466, -0.13783553170019697], popup: "Chequers Tavern", type: ["beer"] },
+    { position: [51.506302737542015, -0.1376096524893135], popup: "Golden Lion", type: ["beer"] },
+    { position: [51.499188261457796, -0.13682623433354935], popup: "Buckingham Arms", type: ["beer"] },
+    { position: [51.498664936021505, -0.13954234111999905], popup: "The Pineapple", type: ["beer"] },
+    { position: [51.496676926344044, -0.1426251175334465], popup: "Duke of York", type: ["beer"] },
+    { position: [51.49651942188282, -0.14755335055163213], popup: "Plumbers Arms", type: ["beer"] },
+    { position: [51.49845325331873, -0.15576785144827293], popup: "The Star Tavern", type: ["beer"] },
+    { position: [51.494734608309045, -0.1742621792733242], popup: "Hoop & Toy", type: ["beer"] },
+    { position: [51.49654335495674, -0.19720687635446227], popup: "The Hansom Cab", type: ["beer"] },
+    { position: [51.49439937613053, -0.21025774087956836], popup: "The Cumberland Arms", type: ["beer"] },
+    { position: [51.49306583931892, -0.2252592120571409], popup: "The William Morris", type: ["beer"] },
+    { position: [51.493357370316176, -0.22448876833869777], popup: "Belushi's Hammersmith", type: ["dance", "beer"] },
+    { position: [51.513856525040474, -0.13498996237838215], popup: "The Blue Posts", type: ["beer"] },
+    { position: [51.51652943566293, -0.130718860184862], popup: "Flying Horse", type: ["beer"] },
+    { position: [51.51714642813598, -0.07899503498287994], popup: "Magpie", type: ["beer"] },
+    { position: [51.52435052029971, -0.07549828114098474], popup: "Owl & Pussycat", type: ["beer"] },
+    { position: [51.53777931007553, -0.0579261556396772], popup: "Netil360", type: ["wine", "beer"] },
+    { position: [51.531730207708485, -0.11134053931891374], popup: "The Lexington", type: ["dance", "beer"] },
+    { position: [51.536721148659616, -0.10315696119553414], popup: "Fox on the Green", type: ["beer"] },
+    { position: [51.458956071338875, -0.3083484874322359], popup: "White Cross", type: ["beer"] },
+    { position: [51.52606143696366, -0.1090936293139055], popup: "Cafe Kick", type: ["wine", "beer"] },
+
   ]
 
   // Add a description for each marker (same order)

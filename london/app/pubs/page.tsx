@@ -72,7 +72,12 @@ export default function Pubs() {
     { position: [51.536721148659616, -0.10315696119553414], popup: "Fox on the Green", type: ["beer"] },
     { position: [51.458956071338875, -0.3083484874322359], popup: "White Cross", type: ["beer"] },
     { position: [51.52606143696366, -0.1090936293139055], popup: "Cafe Kick", type: ["wine", "beer"] },
-
+    { position: [51.53639499710427, -0.08072132349986987], popup: "The Stag's Head Hoxton", type: ["beer"] },
+    { position: [51.53637913502341, -0.05720865228034426], popup: "The Five Points Brewery & Courtyard", type: ["beer"] },
+    { position: [51.512877946374815, -0.08312442080649599], popup: "Lamb Tavern", type: ["beer"] },
+    { position: [51.51302370638321, -0.09396644674441425], popup: "The Pavilion End", type: ["beer"] },
+    { position: [51.52317559982858, -0.10518584872240887], popup: "The Crown Tavern", type: ["beer"] },
+    { position: [51.53642143493749, -0.061744284034662804], popup: "The Dove", type: ["beer"] },
   ]
 
   // Add a description for each marker (same order)
@@ -171,6 +176,11 @@ export default function Pubs() {
             { src: "/pubpark.jpg", name: "Pub on the Park", desc: "Maddy having her first pint next to London fields" },
             { src: "/exmouth.jpg", name: "Exmouth Arms", desc: "Fresh Asahi pints" },
             { src: "/grow.jpg", name: "Grow", desc: "Outside terrace on the canal" },
+            
+            { src: "/kick.jpg", name: "Cafe Kick", desc: "Playing cards with a giant aperol spritz" },
+            { src: "/netil.jpg", name: "Netil360", desc: "DJ stand during sunset" },
+            { src: "/brixton.jpg", name: "Bird House Brewery", desc: "Barrel tables outside" },
+            
             { src: "/mikkeller.jpg", name: "Mikkeller Brewpub", desc: "Exmouth market outside the pub" },
             { src: "/around.jpg", name: "Around", desc: "Prosecco at the window seats" },
             { src: "/peartree.jpg", name: "Pear Tree Cafe", desc: "Playing cards with pints" },

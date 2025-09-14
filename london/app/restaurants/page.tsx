@@ -42,6 +42,7 @@ export default function Restaurants() {
     { position: [51.50484298703188, -0.019079725831616646], popup: "Wahaca Canary Wharf" },
     { position: [51.53796962339435, -0.10292338740047487], popup: "Chubby Bowl" },
     { position: [51.53710360036898, -0.06155196300212603], popup: "Bella Vita" },
+    { position: [51.51366209272775, -0.12741015927303823], popup: "Rosa's Thai" },
   ]
 
   const descriptions: string[] = [

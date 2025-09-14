@@ -51,6 +51,9 @@ export default function Cafes() {
     { position: [51.52284230878379, -0.12416674417665698], popup: "Fortitude Bakehouse" },
     { position: [51.537864072877554, -0.0942152759624027], popup: "Pophams" },
     { position: [51.45684827322482, -0.30309012968510474], popup: "Long Black Richmond" },
+    { position: [51.529115076936634, -0.06956307939975893], popup: "Hermanos Colombian Coffee Roasters" },
+    { position: [51.52250706112442, -0.10342624917351746], popup: "Knockbox Coffee" },
+    { position: [51.52582497899316, -0.10919201207701512], popup: "Tiny Mammoth" },
   ]
 
   const descriptions: string[] = [

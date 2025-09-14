@@ -78,6 +78,12 @@ export default function Pubs() {
     { position: [51.51302370638321, -0.09396644674441425], popup: "The Pavilion End", type: ["beer"] },
     { position: [51.52317559982858, -0.10518584872240887], popup: "The Crown Tavern", type: ["beer"] },
     { position: [51.53642143493749, -0.061744284034662804], popup: "The Dove", type: ["beer"] },
+    { position: [51.526136675134346, -0.11010101110838284], popup: "The Wilmington", type: ["beer"] },
+    { position: [51.513215021710536, -0.13148151969639651], popup: "Old Compton Brasserie", type: ["wine"] },
+    { position: [51.55787264438733, -0.17930907607515995], popup: "The Holly Bush", type: ["beer"] },
+    { position: [51.512876481040934, -0.08423015272286889], popup: "New Moon", type: ["beer"] },
+    { position: [51.54516871263949, -0.07629984790611037], popup: "Dan's", type: ["wine"] },
+    { position: [51.476799389752394, -0.14676737525350145], popup: "The Mason's Arms", type: ["beer"] },
   ]
 
   // Add a description for each marker (same order)

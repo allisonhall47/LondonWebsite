@@ -69,7 +69,7 @@ export default function Pubs() {
     { position: [51.52435052029971, -0.07549828114098474], popup: "Owl & Pussycat", type: ["beer"] },
     { position: [51.53777931007553, -0.0579261556396772], popup: "Netil360", type: ["wine", "beer"] },
     { position: [51.531730207708485, -0.11134053931891374], popup: "The Lexington", type: ["dance", "beer"] },
-    { position: [51.536721148659616, -0.10315696119553414], popup: "Fox on the Green", type: ["beer"] },
+    { position: [51.53506507665509, -0.10474287631740775], popup: "The Steam Passage", type: ["beer"] },
     { position: [51.458956071338875, -0.3083484874322359], popup: "White Cross", type: ["beer"] },
     { position: [51.52606143696366, -0.1090936293139055], popup: "Cafe Kick", type: ["wine", "beer"] },
     { position: [51.53639499710427, -0.08072132349986987], popup: "The Stag's Head Hoxton", type: ["beer"] },
@@ -84,6 +84,10 @@ export default function Pubs() {
     { position: [51.512876481040934, -0.08423015272286889], popup: "New Moon", type: ["beer"] },
     { position: [51.54516871263949, -0.07629984790611037], popup: "Dan's", type: ["wine"] },
     { position: [51.476799389752394, -0.14676737525350145], popup: "The Mason's Arms", type: ["beer"] },
+    { position: [51.51691605090109, -0.0729134727412891], popup: "The Culpeper", type: ["beer"] },
+    { position: [51.54053501004269, -0.10842465623815431], popup: "The Drapers Arms", type: ["beer"] },
+    { position: [51.54313919776207, -0.10287066389552961], popup: "The Pocket", type: ["beer"] },
+    { position: [51.514164722037115, -0.07600576925727377], popup: "Jin Bo Law", type: ["wine"] },
   ]
 
   // Add a description for each marker (same order)

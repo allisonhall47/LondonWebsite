@@ -54,6 +54,8 @@ export default function Cafes() {
     { position: [51.529115076936634, -0.06956307939975893], popup: "Hermanos Colombian Coffee Roasters" },
     { position: [51.52250706112442, -0.10342624917351746], popup: "Knockbox Coffee" },
     { position: [51.52582497899316, -0.10919201207701512], popup: "Tiny Mammoth" },
+    { position: [51.482185832432805, -0.154953558742975], popup: "Pier Point Cafe" },
+    { position: [51.51468735426574, -0.08035490201444713], popup: "Notes Coffee Roasters" },
   ]
 
   const descriptions: string[] = [

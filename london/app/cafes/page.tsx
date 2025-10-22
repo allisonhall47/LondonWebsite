@@ -56,6 +56,7 @@ export default function Cafes() {
     { position: [51.52582497899316, -0.10919201207701512], popup: "Tiny Mammoth" },
     { position: [51.482185832432805, -0.154953558742975], popup: "Pier Point Cafe" },
     { position: [51.51468735426574, -0.08035490201444713], popup: "Notes Coffee Roasters" },
+    { position: [51.52553162716914, -0.07064583140359079], popup: "Holy Shot Coffee" },
   ]
 
   const descriptions: string[] = [

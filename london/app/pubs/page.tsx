@@ -88,6 +88,13 @@ export default function Pubs() {
     { position: [51.54053501004269, -0.10842465623815431], popup: "The Drapers Arms", type: ["beer"] },
     { position: [51.54313919776207, -0.10287066389552961], popup: "The Pocket", type: ["beer"] },
     { position: [51.514164722037115, -0.07600576925727377], popup: "Jin Bo Law", type: ["wine"] },
+    { position: [51.546368252152234, -0.10171034265051511], popup: "Brewhouse & Kitchen", type: ["beer"] },
+    { position: [51.51295951788254, -0.08566104998864847], popup: "Jamaica Wine House", type: ["beer"] },
+    { position: [51.53113436253489, -0.06948295813622052], popup: "Equal Parts", type: ["wine"] },
+    { position: [51.53565980770441, -0.10283836198265864], popup: "Camden Head", type: ["beer"] },
+    { position: [51.53790170395128, -0.1445731038605389], popup: "Earl of Camden", type: ["beer"] },
+    { position: [51.53950350593485, -0.14223038830239917], popup: "The Camden Eye", type: ["beer"] },
+    { position: [51.51482616354751, -0.07803540686054367], popup: "The Lion Houndsditch", type: ["beer"] },
   ]
 
   // Add a description for each marker (same order)

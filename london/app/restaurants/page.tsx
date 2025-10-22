@@ -44,6 +44,7 @@ export default function Restaurants() {
     { position: [51.53710360036898, -0.06155196300212603], popup: "Bella Vita" },
     { position: [51.51366209272775, -0.12741015927303823], popup: "Rosa's Thai" },
     { position: [51.51967226748717, -0.08452139478566016], popup: "Bar Douro" },
+    { position: [51.534554859329305, -0.057619634818895954], popup: "Miga" },
   ]
 
   const descriptions: string[] = [
